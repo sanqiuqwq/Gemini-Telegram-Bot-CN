@@ -1,8 +1,8 @@
 from google.genai import types
 conf = {
-    "error_info":           "⚠️⚠️⚠️\nSomething went wrong !\nplease try to change your prompt or contact the admin !",
-    "before_generate_info": "🤖Generating🤖",
-    "download_pic_notify":  "🤖Loading picture🤖",
+    "error_info":           "Error\n一些错误 !\n请尝试联系机器人管理员 !",
+    "before_generate_info": "🤖回答中🤖",
+    "download_pic_notify":  "🤖加载图片🤖",
     "model_1":              "gemini-2.5-flash-preview-04-17",
     "model_2":              "gemini-2.5-pro-preview-05-06",
     "model_3":              "gemini-2.0-flash-preview-image-generation",#for draw
