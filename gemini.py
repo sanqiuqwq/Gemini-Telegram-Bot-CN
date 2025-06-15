@@ -28,7 +28,7 @@ client = genai.Client(api_key=sys.argv[2])
 async def gemini_stream(bot:TeleBot, message:Message, m:str, model_type:str):
     sent_message = None
     try:
-        sent_message = await bot.reply_to(message, "🤖 Generating answers...")
+        sent_message = await bot.reply_to(message, "🤖 等待回复中...")
 
         chat = None
         if model_type == model_1:
