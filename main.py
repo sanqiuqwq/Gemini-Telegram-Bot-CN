@@ -21,13 +21,13 @@ async def main():
     await bot.delete_my_commands(scope=None, language_code=None)
     await bot.set_my_commands(
     commands=[
-        telebot.types.BotCommand("start", "Start"),
-        telebot.types.BotCommand("gemini", f"using {conf['model_1']}"),
-        telebot.types.BotCommand("gemini_pro", f"using {conf['model_2']}"),
-        telebot.types.BotCommand("draw", "draw picture"),
-        telebot.types.BotCommand("edit", "edit photo"),
-        telebot.types.BotCommand("clear", "Clear all history"),
-        telebot.types.BotCommand("switch","switch default model")
+        telebot.types.BotCommand("start", "开始"),
+        telebot.types.BotCommand("gemini", f"使用 {conf['model_1']}"),
+        telebot.types.BotCommand("gemini_pro", f"使用 {conf['model_2']}"),
+        telebot.types.BotCommand("draw", "生成图片"),
+        telebot.types.BotCommand("edit", "编辑图片"),
+        telebot.types.BotCommand("clear", "清除历史对话记录"),
+        telebot.types.BotCommand("switch","切换默认模型")
     ],
 )
     print("Bot init done.")
